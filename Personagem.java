@@ -56,7 +56,7 @@ public class Personagem{
       System.out.println(nome + " sem sono");
     }
   }
-
+  //metodo string para exibir status do personagem
   public String toString(){
     //nome: e:5, f:4, s:8
     return String.format(
