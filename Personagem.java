@@ -64,6 +64,10 @@ public class Personagem{
     }
   }
 
+  void atacar(){
+    System.out.println(nome + " atacando");
+  }
+
   //metodo string para exibir status do personagem
   public String toString(){
     //nome: e:5, f:4, s:8
