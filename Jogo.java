@@ -10,6 +10,10 @@ public class Jogo{
         //loop infinito
         while (true) {
             var acaoDoPlayer1 = gerador.nextInt(3)+1; //movimentacao aleatoria/gera valor entre 1 e 3 == cacar, comer, dormir
+            if (player1.energia <= 0){
+                player1.morte();
+                break;
+            }
             switch(acaoDoPlayer1){
                 case 1:
                     player1.cacar();

@@ -1,6 +1,6 @@
 public class Personagem{
   String nome;
-  private int energia;
+  int energia; //alterei o acesso da variavel
   private int fome;
   private int sono;
 
@@ -56,6 +56,14 @@ public class Personagem{
       System.out.println(nome + " sem sono");
     }
   }
+  //método morte
+  void morte(){
+    if (energia <= 0){
+      energia = 0;
+      System.out.println(nome + " morreu\n");
+    }
+  }
+
   //metodo string para exibir status do personagem
   public String toString(){
     //nome: e:5, f:4, s:8
